@@ -1,0 +1,15 @@
+column,data_type,missing_count,missing_percent,unique_values
+PatientId,float64,0,0.0,62299
+AppointmentID,int64,0,0.0,110527
+Gender,str,0,0.0,2
+ScheduledDay,str,0,0.0,103549
+AppointmentDay,str,0,0.0,27
+Age,int64,0,0.0,104
+Neighbourhood,str,0,0.0,81
+Scholarship,int64,0,0.0,2
+Hipertension,int64,0,0.0,2
+Diabetes,int64,0,0.0,2
+Alcoholism,int64,0,0.0,2
+Handcap,int64,0,0.0,5
+SMS_received,int64,0,0.0,2
+No-show,str,0,0.0,2

@@ -1,0 +1,23 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+.env
+.env.*
+!.env.example
+.vscode/
+
+*.db
+*.sqlite
+*.sqlite3
+
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Raw source dataset
+data/raw/
+
+# Local Python configuration
+*.egg-info/
