@@ -176,3 +176,64 @@ Additional statistical analysis and evaluation would be required to establish wh
 ## Project Purpose
 
 This project was developed to demonstrate practical data analytics skills through a healthcare operations use case, combining Python, SQL, and Power BI to transform appointment records into interpretable metrics and operational recommendations.
+
+## How to Run This Project
+
+### Prerequisites
+
+- Python 3
+- Power BI Desktop (to view the interactive dashboard)
+- Git (optional)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/jisnajoh/Healthcare-Operations-Analytics.git
+cd Healthcare-Operations-Analytics
+```
+
+### 2. Create a Virtual Environment
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+### 4. Download the Dataset
+
+Download the **Medical Appointment No Shows** dataset from Kaggle.
+
+Place the CSV file in the following location:
+
+`data/raw/medical_appointments.csv`
+
+The raw dataset is excluded from version control.
+
+### 5. Run the Data Processing Scripts
+
+Execute the scripts from the project root in this order:
+
+```powershell
+python scripts/01_inspect_data.py
+python scripts/02_clean_data.py
+python scripts/03_create_database.py
+python scripts/04_run_sql_analysis.py
+```
+
+These scripts inspect and clean the appointment records, create a SQLite database, execute SQL analyses, and generate analytical reports.
+
+### 6. View the Power BI Dashboard
+
+Open the following file using Power BI Desktop:
+
+`dashboards/Healthcare_Operations_Dashboard.pbix`
+
+The dashboard presents appointment volumes, no-show rates, scheduling lead-time patterns, and other healthcare operational metrics.
+
+**Note:** If Power BI cannot locate the data source on another computer, update the data source paths in Power BI Desktop to point to the locally generated project files.
